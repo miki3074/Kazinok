@@ -1,0 +1,846 @@
+@media(min-width: 1199px) {
+    .h-81vh {
+        height: 81vh;
+    }
+}
+
+.back{
+    background-color: wheat;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 10px;
+}
+/* .gameinc{
+    width: 50px;
+} */
+
+.emptyGame, .emptyGame .tx-success, .emptyGame .tx-danger {
+    color: transparent !important;
+    cursor: default;
+    pointer-events: none;
+}
+@media (max-width: 768px) {
+    .btn-la-mob {
+        font-size: 13px !important
+    }
+
+    .navbar-menu .nav-link, .navbar-menu-sub .nav-sub-link {
+        font-size: 13px !important
+    }
+
+    .bt-mob {
+        padding: 6px 12px;
+        letter-spacing: 0;
+        font-size: 10px
+    }
+
+    .step-link {
+        padding: 2px 0 !important;
+        font-size: 12px !important
+    }
+
+    .mg-t-sm-10 {
+        margin-top: 10px
+    }
+
+    .mg-b-sm-10 {
+        margin-bottom: 10px
+    }
+}
+
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+    color: #fff;
+}
+
+.bg-success-dice {
+    background: linear-gradient(to right, rgb(12, 191, 136), rgb(18, 202, 86)) 0% 0% repeat scroll rgba(0, 0, 0, 0);
+    background-color: #3bbc73;
+    color: #f4fcfd
+}
+
+.men-gam {
+    background: linear-gradient(45deg, #4a5982 0%, #041961 100%) !important;
+    background: #22325d
+}
+
+.link-01 {
+    color: #0b2165
+}
+
+.bg-danger-dice {
+    background-color: #d54d5b;
+    background: linear-gradient(to left, #de4658, #ff5b6f) !important;
+    color: #f4fcfd
+}
+
+.bg-df-1 {
+    background-color: #0168fa
+}
+
+.bg-df-2 {
+    background-color: #69b2f8
+}
+
+.bg-df-3 {
+    background-color: #d1e6fa
+}
+
+.bg-litecoin {
+    background-color: #325a98
+}
+
+.stroke-wd-3 {
+    stroke-width: 3px
+}
+
+.wd-12 {
+    width: 12px
+}
+
+.ht-12 {
+    height: 12px
+}
+
+.chart-one {
+    position: relative;
+    overflow: hidden;
+    margin: 0 15px 15px;
+    padding-top: 80px;
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem
+}
+
+@media (min-width: 576px) {
+    .chart-one {
+        margin: 0 20px 15px;
+        padding-top: 0;
+        overflow: visible
+    }
+}
+
+.chart-one .flot-x-axis {
+    display: none
+}
+
+@media (min-width: 576px) {
+    .chart-one .flot-x-axis {
+        display: block
+    }
+}
+
+.chart-one .flot-x-axis .flot-tick-label {
+    transform: translateY(2px);
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, inter ui, Roboto, sans-serif;
+    letter-spacing: .5px;
+    color: #8392a5
+}
+
+.chart-one .flot-chart {
+    margin-left: -12px;
+    margin-right: -10px;
+    height: 350px
+}
+
+.chart-two .flot-x-axis > div {
+    transform: translateY(3px);
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, inter ui, Roboto, sans-serif;
+    letter-spacing: .5px;
+    color: #8392a5
+}
+
+.chart-two .flot-x-axis > div:first-child {
+    margin-left: 15px
+}
+
+.chart-two .flot-chart {
+    height: 150px;
+    margin-left: -15px;
+    margin-right: -13px
+}
+
+@media (max-width: 768px) {
+    h4 {
+        font-size: 19px !important
+    }
+}
+
+@media (min-width: 576px) {
+    .chart-two .flot-chart {
+        height: 210px
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .chart-two .flot-chart {
+        height: 155px
+    }
+}
+
+.chart-three .flot-chart {
+    margin-left: -7px;
+    margin-right: -8px;
+    margin-bottom: -5px
+}
+
+.chart-four .flot-chart {
+    margin-right: -8px;
+    margin-bottom: -5px
+}
+
+.chart-five > div {
+    position: relative;
+    margin-left: -10px;
+    height: 225px
+}
+
+.table-dashboard {
+    font-size: 13px
+}
+
+.table-dashboard thead th, .table-dashboard tbody td {
+    border-color: #e5e9f2;
+    white-space: nowrap
+}
+
+.table-dashboard thead th:first-child, .table-dashboard tbody td:first-child {
+    padding-left: 20px
+}
+
+.table-dashboard thead th:last-child, .table-dashboard tbody td:last-child {
+    padding-right: 20px
+}
+
+.table-dashboard thead th {
+    font-family: -apple-system, BlinkMacSystemFont, inter ui, Roboto, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #8392a5
+}
+
+.table-dashboard-one tbody td {
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.chart-six {
+    margin-left: -5px;
+    height: 150px
+}
+
+@media (min-width: 576px) {
+    .chart-six {
+        height: 200px
+    }
+}
+
+@media (min-width: 768px) {
+    .chart-six {
+        height: 250px
+    }
+}
+
+@media (min-width: 992px) {
+    .chart-six {
+        height: 300px
+    }
+}
+
+.chart-seven {
+    height: 150px
+}
+
+@media (min-width: 992px) {
+    .chart-seven {
+        height: 205px
+    }
+}
+
+@media (min-width: 1200px) {
+    .chart-seven {
+        height: 188px
+    }
+}
+
+.chart-eight .flot-chart {
+    margin-left: -26px;
+    margin-right: -26px;
+    margin-bottom: -26px;
+    height: 126px
+}
+
+@media (min-width: 768px) {
+    .chart-eight .flot-chart {
+        height: 167px
+    }
+}
+
+@media (min-width: 992px) {
+    .chart-eight .flot-chart {
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-bottom: -30px;
+        height: 126px
+    }
+}
+
+.chart-nine .flot-chart {
+    height: 142px;
+    margin-left: -5px;
+    margin-right: -5px
+}
+
+.chart-nine .flot-y-axis .flot-tick-label, .chart-nine .flot-x-axis .flot-tick-label {
+    font-size: 9px;
+    font-family: -apple-system, BlinkMacSystemFont, inter ui, Roboto, sans-serif;
+    font-weight: 500;
+    color: #8392a5
+}
+
+.chart-nine .flot-y-axis .flot-tick-label {
+    margin-left: -10px
+}
+
+.chart-nine .flot-y-axis .flot-tick-label:first-child {
+    display: none
+}
+
+.chart-nine .flot-x-axis .flot-tick-label {
+    transform: translateY(3px)
+}
+
+.chart-nine .flot-x-axis .flot-tick-label:last-child {
+    margin-left: -5px
+}
+
+.chart-ten .flot-chart {
+    height: 95px;
+    margin-left: -8px;
+    margin-right: -12px
+}
+
+.card-dashboard-table .table th, .card-dashboard-table .table td {
+    border-color: rgba(72, 94, 144, .16);
+    padding: 10px 15px;
+    font-size: 13px;
+    text-align: right;
+    white-space: nowrap
+}
+
+.card-dashboard-table .table thead tr th:first-child {
+    border-left-width: 0
+}
+
+.card-dashboard-table .table thead tr th:last-child {
+    border-right-width: 0
+}
+
+.card-dashboard-table .table thead tr:first-child th {
+    border-top-width: 0;
+    font-size: 13px;
+    background-color: #f5f6fa;
+    text-align: left
+}
+
+.card-dashboard-table .table thead tr:last-child th {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    padding: 8px 15px;
+    color: #8392a5
+}
+
+.card-dashboard-table .table thead tr th:first-child, .card-dashboard-table .table tbody tr td:first-child {
+    text-align: left
+}
+
+.card-dashboard-table .table strong {
+    font-family: -apple-system, BlinkMacSystemFont, inter ui, Roboto, sans-serif;
+    font-weight: 500
+}
+
+.card-crypto .nav-line {
+    border-bottom-width: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: .5px
+}
+
+.card-crypto .nav-line .nav-link + .nav-link {
+    margin-left: 10px
+}
+
+.card-crypto .nav-line .nav-link.active::after {
+    height: 1px;
+    bottom: -10px;
+    border-radius: .25rem;
+    display: none
+}
+
+@media (min-width: 576px) {
+    .card-crypto .nav-line .nav-link.active::after {
+        display: block
+    }
+}
+
+.chart-eleven .flot-chart {
+    height: 160px
+}
+
+@media (min-width: 576px) {
+    .chart-eleven .flot-chart {
+        height: 220px
+    }
+}
+
+@media (min-width: 768px) {
+    .chart-eleven .flot-chart {
+        height: 250px
+    }
+}
+
+@media (min-width: 992px) {
+    .chart-eleven .flot-chart {
+        height: 284px
+    }
+}
+
+.chart-eleven .flot-x-axis > div:first-child, .chart-eleven .flot-y-axis > div:first-child {
+    display: none
+}
+
+.crypto {
+    position: relative;
+    padding: 20px
+}
+
+.crypto-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px
+}
+
+.crypto-icon-sm {
+    height: 35px;
+    width: 35px;
+    font-size: 16px
+}
+
+.crypto-bitcoin-cash {
+    line-height: 0;
+    transform: rotate(-40deg)
+}
+
+.chart-twelve .flot-chart {
+    height: 80px;
+    margin-left: -20px;
+    margin-right: -20px
+}
+
+.list-label {
+    padding: 6px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 10px;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, inter ui, sans-serif;
+    background-color: #f5f6fa;
+    color: #8392a5;
+    letter-spacing: 1px;
+    border-top: 1px solid #e5e9f2
+}
+
+.list-label:first-of-type {
+    border-top-width: 0
+}
+
+.list-item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e5e9f2
+}
+
+.chart-thirteen {
+    height: 220px
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .chart-thirteen {
+        height: 143px
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .chart-thirteen {
+        height: 160px
+    }
+}
+
+.chart-fourteen {
+    position: relative;
+    overflow: hidden
+}
+
+.chart-fourteen .flot-chart {
+    height: 200px;
+    margin-top: -10px;
+    margin-left: -30px;
+    margin-right: -28px
+}
+
+.chart-fourteen .flot-x-axis .flot-tick-label {
+    font-size: 9px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, inter ui, Roboto, sans-serif;
+    color: #8392a5;
+    text-transform: uppercase;
+    letter-spacing: -.2px
+}
+
+.chart-fifteen {
+    overflow: hidden
+}
+
+.chart-fifteen .flot-chart {
+    height: 200px;
+    margin-right: -18px
+}
+
+.chart-fifteen .flot-y-axis .flot-tick-label, .chart-fifteen .flot-x-axis .flot-tick-label {
+    font-size: 9px;
+    font-family: -apple-system, BlinkMacSystemFont, inter ui, Roboto, sans-serif;
+    font-weight: 500;
+    color: #67788e
+}
+
+.chart-fifteen .flot-y-axis .flot-tick-label:first-child {
+    display: none
+}
+
+.chart-fifteen .flot-x-axis .flot-tick-label {
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 600
+}
+
+.chart-sixteen {
+    overflow: hidden
+}
+
+.chart-sixteen .flot-chart {
+    height: 180px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .chart-sixteen .flot-chart {
+        height: 274px
+    }
+}
+
+@media (min-width: 1200px) {
+    .chart-sixteen .flot-chart {
+        height: 186px
+    }
+}
+
+.chart-sixteen .flot-x-axis .flot-tick-label {
+    font-size: 9px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, inter ui, Roboto, sans-serif;
+    margin-top: -25px;
+    margin-left: -25px
+}
+
+.chart-sixteen .flot-x-axis .flot-tick-label:first-child {
+    display: none
+}
+
+.chart-seventeen {
+    height: 260px
+}
+
+.table-dashboard-two {
+    width: 100%;
+    font-size: 13px
+}
+
+.table-dashboard-two tr + tr td {
+    border-top: 1px solid #e5e9f2
+}
+
+.table-dashboard-two td {
+    vertical-align: top;
+    line-height: 1;
+    padding: 8px 0
+}
+
+.table-dashboard-two td:first-child {
+    padding-left: 0
+}
+
+.table-dashboard-two td:first-child div {
+    opacity: .7
+}
+
+.table-dashboard-two td:nth-child(3), .table-dashboard-two td:last-child {
+    font-family: rubik, sans-serif
+}
+
+.table-dashboard-two td:last-child {
+    color: #8392a5
+}
+
+.new-mes {
+    fill: rgba(250, 1, 1, 0.06)!important;
+    color: #fa7001eb!important;
+}
+
+.ind-top
+{
+    fill: rgba(0, 23, 55, 0.04);
+}
+.ind-top:hover
+{
+    fill: rgba(1, 104, 250, 0.2);
+    color: #0168fa;
+}
+
+.gameinc.present span, .gameinc:hover span {
+    background: #0168fa!important;
+    background: linear-gradient(45deg, #1c65c9 0%, #2c80ff 100%)!important;
+}
+
+
+@media (max-width: 992px) {
+    .mg-header {
+        margin-top: 55px;
+        z-index: 998!important;
+    }
+    .mg-content {
+        margin-top: 90px;
+        z-index: 998!important;
+    }
+}
+
+.cls-1 {
+    fill: #00364d;
+}
+
+.cls-2 {
+    fill: #009a61;
+}
+
+.cls-3 {
+    fill: #fff;
+}
+
+#response tr:hover {
+    cursor: pointer;
+}
+
+/** Type bet DICE MIN */
+.rounded-m {
+    height: 100%;
+    border-radius: 999px;
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+.progress-container-m {
+    position: relative;
+}
+
+.progress-m {
+    background: linear-gradient(to left, #de4658, #ff5b6f) !important;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #de4658;
+    border-radius: 99px;
+}
+.progress-m .progress-bar-m {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(to right, rgb(12, 191, 136), rgb(18, 202, 86)) 0% 0% repeat scroll rgba(0, 0, 0, 0);
+    background-color: #3bbc73;
+    transition: width .2s linear;
+}
+.progress-m .progress-number-m {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform .2s linear;
+}
+.progress-m .progress-number-m:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    transform: translateX(-50%);
+    border-top: 10px solid #ee5063;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.progress-m .progress-number-m:after {
+    content: attr(aria-valuenow);
+    position: absolute;
+    left: 0;
+    top: -9px;
+    transform: translate(-50%, -100%);
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    background: linear-gradient(to left, #de4658, #ff5b6f) !important;
+    background-color: #525961;
+    border-radius: 3px;
+}
+
+/** Type bet DICE MAX */
+.rounded-m-max {
+    height: 100%;
+    border-radius: 999px;
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+.progress-container-m-max {
+    position: relative;
+}
+
+.progress-m-max {
+    background: linear-gradient(to right, rgb(12, 191, 136), rgb(18, 202, 86)) 0% 0% repeat scroll rgba(0, 0, 0, 0);
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: #de4658;
+    border-radius: 99px;
+}
+.progress-m-max .progress-bar-m-max {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(to left, #de4658, #ff5b6f) !important;
+
+    background-color: #3bbc73;
+    transition: width .2s linear;
+}
+.progress-m-max .progress-number-m-win {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform .2s linear;
+}
+.progress-m-max .progress-number-m-win:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    transform: translateX(-50%);
+    border-top: 10px solid #0fc56f;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.progress-m-max .progress-number-m-win:after {
+    content: attr(aria-valuenow);
+    position: absolute;
+    left: 0;
+    top: -9px;
+    transform: translate(-50%, -100%);
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    background: linear-gradient(to right, rgb(12, 191, 136), rgb(18, 202, 86)) 0% 0% repeat scroll rgba(0, 0, 0, 0);
+    background-color: #525961;
+    border-radius: 3px;
+}
+
+.progress-m .progress-number-m-win {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform .2s linear;
+}
+.progress-m .progress-number-m-win:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    transform: translateX(-50%);
+    border-top: 10px solid #0fc56f;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.progress-m .progress-number-m-win:after {
+    content: attr(aria-valuenow);
+    position: absolute;
+    left: 0;
+    top: -9px;
+    transform: translate(-50%, -100%);
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    background: linear-gradient(to right, rgb(12, 191, 136), rgb(18, 202, 86)) 0% 0% repeat scroll rgba(0, 0, 0, 0);
+    background-color: #525961;
+    border-radius: 3px;
+}
+
+.progress-m-max .progress-number-m {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform .2s linear;
+}
+.progress-m-max .progress-number-m:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    transform: translateX(-50%);
+    border-top: 10px solid #ee5063;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.progress-m-max .progress-number-m:after {
+    content: attr(aria-valuenow);
+    position: absolute;
+    left: 0;
+    top: -9px;
+    transform: translate(-50%, -100%);
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    background: linear-gradient(to left, #de4658, #ff5b6f) !important;
+    background-color: #525961;
+    border-radius: 3px;
+}
+tr.emptyGame > * {
+    color: transparent!important;
+    pointer-events: none;
+}
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+    color: inherit;
+}

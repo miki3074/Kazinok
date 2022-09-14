@@ -1,0 +1,64 @@
+@php
+// include($_SERVER['DOCUMENT_ROOT'].'/sosatb_ddoserbl/include.php');
+
+@endphp
+
+<!doctype html>    
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<!-- GP_E4cb5ST9kUWy2jEhpnXSXZaELNXCVQps; -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="yandex-verification" content="37a56bba06978bfa" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <title>{{ $settings->title }}</title>
+        <meta name="description" content="{{ $settings->description }}">
+        <meta name="keywords" content="{{ $settings->keywords }}">
+        <meta name="enot" content="3411647715318DJO3-lMlw2Wnfp6_6f6IrJ6JlMDVb30v" />
+        <meta name="getpay" content="GP_E4cb5ST9kUWy2jEhpnXSXZaELNXCVQps;" />
+
+        <link href="{{ asset('css/ionicons.css') }}?v={{ $settings->file_version }}" rel="stylesheet">
+        <link href="{{ asset('css/jqvmap.css') }}?v={{ $settings->file_version }}" rel="stylesheet">
+        <link href="{{ asset('css/dfg_002.css') }}?v={{ $settings->file_version }}" rel="stylesheet">
+        <link href="{{ asset('css/dfg.css') }}?v={{ $settings->file_version }}" rel="stylesheet">
+        <link href="{{ asset('css/skin.css') }}?v={{ $settings->file_version }}" rel="stylesheet">
+        <meta name="xmpay" content="09012e37fe9beb3160478f6959b4c79a65ca154c888f86016ff365d1cb96f648">
+    </head>
+    <body class="page-profile df-roboto" style="font-family: -apple-system, BlinkMacSystemFont, sans-serif!important;">
+        <a style="display: none;" href="https://www.fkwallet.ru"><img src="https://www.fkwallet.ru/assets/2017/images/btns/iconsmall_wallet9.png" title="Криптовалютный кошелек"></a>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="app">
+          <!-- Тех. работы -->
+        <layout></layout> 
+        </div>
+    </body>
+    <script src="{{ asset('dist/js/jquery.js') }}"></script>
+    <script src="{{ asset('dist/js/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('dist/js/chart.min.js') }}"></script>
+    <script src="{{ asset('dist/js/chartjs-plugin-labels.js') }}"></script>
+    <script src="{{ asset('dist/js/fontAwesome.js') }}"></script>
+    <script src="{{ asset('dist/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('dist/js/perfect-scrollbar.js') }}"></script>
+    <script src="{{ asset('dist/js/odometer.js') }}"></script>
+    <script src="{{ asset('dist/js/cbrd.js') }}"></script>
+    <script src="{{ asset('dist/js/ion.js') }}"></script>
+    <script src="{{ asset('dist/js/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('dist/js/dataTables.js') }}"></script>
+    <script src="{{ asset('dist/js/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('dist/js/moment.js') }}"></script>
+    <script src="{{ asset('dist/js/daterangepicker.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}?v={{ $settings->file_version }}"></script>
+    <script>console.log("%cОСТАНОВИТЕСЬ!","color: red; font-size: 42px; font-weight: 700"),console.log("%cЭто функция браузера для разработчиков. Если кто-то сказал вам, что вы можете скопировать и вставить что-то здесь, то это мошенничество, которое даст злоумышленнику доступ к вашему аккаунту на Demoney.","font-size: 20px;")</script>
+    @php
+        session_start();
+        if(!isset($_SESSION['httpref'])) {
+            $_SESSION['httpref'] = $_SERVER['HTTP_REFERER'] ?? null;
+        }
+    @endphp
+    @if(session('modal'))
+        <script>$('#modalSignUp').modal('show');</script>
+    @endif
+</html>

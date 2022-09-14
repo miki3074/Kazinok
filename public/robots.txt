@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /phpmyadmin*
+Disallow: /sosatb_ddoserbl*
+Disallow: /stats*

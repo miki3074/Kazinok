@@ -1,0 +1,16 @@
+iframe#telegram-login-demoney_auth_bot {
+    width: 100% !important;
+    margin-bottom: 15px !important;
+}
+body.body_widget_login {
+    width: 100% !important;
+}
+button.tgme_widget_login_button {        
+    border: 1px solid transparent !important;
+    border-color: #4064ac !important;
+    background-color: transparent !important;
+    color: #4064ac !important;
+    border-radius: .25rem !important;
+    font-size: .875rem !important;
+    width: 100% !important;
+}
