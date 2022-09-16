@@ -1,26 +1,7 @@
 <template>
     <div class="card mg-b-10 mg-t-10 hash-mob">
         <div class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 pd-b-0">
-            <div>
-                <h6 class="mg-b-5" style="font-weight: 900; color: blue; font-size: 21px;">Последние игры </h6>
-                <p class="tx-13 tx-color-03 mg-b-0"></p>
-            </div>
-            <div class="d-flex mg-t-20 mg-sm-t-0">
-                <div class="btn-group flex-fill">
-                    <button class="btn btn-white btn-xs bt-table" :class="[activeTab === 'all' ? 'active' : '']"
-                            @click="selectTab('all')">
-                        Все игры
-                    </button>
-                    <button id="mob-wdw" class="btn btn-white btn-xs bt-table" :class="[activeTab === 'wdw' ? 'active' : '']"
-                            @click="selectTab('wdw')">
-                        Выплаты
-                    </button>
-                    <button class="btn btn-white btn-xs bt-table" :class="[activeTab === 'my' ? 'active' : '']"
-                            @click="selectTab('my')">
-                        Мои игры
-                    </button>
-                </div>
-            </div>
+            <div><div class="textWindowLast">Последние игры</div><div class="miniDesc">Все последние игры сайта здесь</div></div>
         </div>
         <div class="table-responsive mg-t-20 mg-b-15" v-show="activeTab === 'wdw'">
             <table class="table table-dashboard mg-b-0 table-live">
@@ -198,6 +179,15 @@
     }
 </script >
 <style scoped>
+
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background:#f1f1f1;}
+::-webkit-scrollbar-thumb{background:#888;}
+::-webkit-scrollbar-thumb:hover{background:#555;}
+.miniDesc{font-family:rubiklight;font-size:11px;color:#6c779e;font-weight:600;margin-top:8px;}
+.titleWindowLast>div{border-bottom:1px solid #dce0ed;padding:0 10px 7px;}
+.textWindowLast{font-family:rubikbold;text-transform:uppercase;font-size:20px;color:#3566fb;color:var(--main-color);}
+
     @media (max-width: 1023px) {
         #mob-wdw {
             display: none !important;

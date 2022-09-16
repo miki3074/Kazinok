@@ -19801,7 +19801,7 @@ input.parsley-success, input.parsley-success:focus, textarea.parsley-success, te
 
 @media (min-width: 992px) {
     .content-fixed {
-        margin-top: 60px
+        /* margin-top: 60px */
     }
 }
 

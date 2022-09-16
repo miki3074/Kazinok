@@ -1,9 +1,10 @@
 <template>
     <!-- <div v-if="$root.user !== null && $root.user.is_admin == 1 || $root.user !== null && $root.user.id == 20"> --> 
     <div> 
-        <Header :page="page"/>
+        <!-- <Header :page="page"/> -->
         <div class="content content-fixed mg-content">
-            <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
+          <!-- container pd-x-0 pd-lg-x-10 pd-xl-x-0 -->
+            <div class="">
                 <div class="cont-des d-none mexe-let">
                     <h1>Demoney | Demoney</h1>
                     <p>Самые прибыльные и интересные игры <b>Demoney онлайн</b> представлены на данном официальном сайте.
@@ -49,171 +50,57 @@
                 <div class="row">
   
 
-                    <div class=" mg-t-10 h-90vh back" style="width: 122px; margin-right: 10px;">
-                        
-                    </div>
+                    <div class="firstBlock">
+  <div class="leftBlock">
+    <div class="topBlock flex">
+      <div class="text">Контакты</div>
+      <div class="icons flex">
+        <div class="vk flex"><i class="fab fa-vk" aria-hidden="true"></i></div>
+        <div class="tg flex"><i class="fab fa-telegram-plane" aria-hidden="true"></i></div>
+      </div>
+    </div>
+    <div class=""></div>
+    <div class="chatBlock">
+      <div class="chatTop flex">
+        <div class="mobChatText" wfd-invisible="true"><i class="fas fa-arrow-right" aria-hidden="true"></i>Чат</div>
+        <div class="mobIcons" wfd-invisible="true">
+          <div class="icons flex">
+            <div class="vk flex"><i class="fab fa-vk" aria-hidden="true"></i></div>
+            <div class="tg flex"><i class="fab fa-telegram-plane" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <div class="flex just-b" style="width: 100%;">
+          <div class="flex justStart"><i class="fas fa-circle" aria-hidden="true"></i>
+            <div class="online">?</div>
+          </div>
+          <div class="autoScroll flex" style="border: 2px solid transparent;"><i class="fas fa-arrow-down" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <div class="contestBlock">
+        <div class="contestTitle">Промокод каждый час</div>
+        <div>00:02:06</div>
+      </div>
+      <div class="messages messagesNot">
+        
+      </div>
+      <div class="inputChat"><input class="inpChat" placeholder="Введите сообщение..." value=""><i class="fas fa-paper-plane sendChat" aria-hidden="true"></i></div>
+    </div>
+  </div>
+</div>
 
-
-                   
-                    <div class=" mg-t-10 h-90vh back">
-                        <!-- <div class="align-items-center justify-content-between mg-b-20 d-none d-sm-flex">
-                            <h2 class="tx-uppercase tx-semibold mg-b-0 ch-gm" style="color: #031a61;">Выбор игры</h2>
-                        </div> -->
-                        <ul class="list-unstyled media-list mg-b-15 d-none d-sm-block">
-
-                       <!-- dice      -->
-                            <li @click="goToDice" id="menudice" class="media align-items-center mg-t-15 gameinc" :class="[page === 'dice' ? 'present' : '']">
-                                <div class="avatar">
-                                <span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box">
-                                        <path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"></path>
-                                        <polyline points="2.32 6.16 12 11 21.68 6.16"></polyline>
-                                        <line x1="12" y1="22.76" x2="12" y2="11"></line>
-                                    </svg>
-                                </span>
-                                </div>
-                                <!-- <div class="media-body pd-l-15">
-                                    <h6 class="mg-b-2"><router-link tag="a" :to="{name: 'dice'}" class="link-01 tx-18">Dice123</router-link></h6>
-                                </div> -->
-                            </li>
-                    <!-- mines -->
-                            <li @click="goToMines" id="menumines" class="media align-items-center mg-t-15 gameinc" :class="[page === 'mines' ? 'present' : '']">
-                                    <div class="avatar"><span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25)"><i class="ion ion-md-grid tx-22"></i></span></div>
-                                <!-- <div class="media-body pd-l-15">
-                                    <h6 class="mg-b-2"><router-link tag="a" :to="{name: 'mines'}" class="link-01 tx-18">Mines</router-link></h6>
-                                </div> -->
-                            </li>
-                    <!-- crash -->
-                            <li @click="goToMines" id="menumines" class="media align-items-center mg-t-15 gameinc" :class="[page === 'mines' ? 'present' : '']">
-                                    <div class="avatar"><span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25)"><i class="ion ion-md-grid tx-22"></i></span></div>
-                                <!-- <div class="media-body pd-l-15">
-                                    <h6 class="mg-b-2"><router-link tag="a" :to="{name: 'mines'}" class="link-01 tx-18">Mines</router-link></h6>
-                                </div> -->
-                            </li>
-                    <!-- jacpot -->
-                            <li @click="goToMines" id="menumines" class="media align-items-center mg-t-15 gameinc" :class="[page === 'mines' ? 'present' : '']">
-                                    <div class="avatar"><span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25)"><i class="ion ion-md-grid tx-22"></i></span></div>
-                                <!-- <div class="media-body pd-l-15">
-                                    <h6 class="mg-b-2"><router-link tag="a" :to="{name: 'mines'}" class="link-01 tx-18">Mines</router-link></h6>
-                                </div> -->
-                            </li>
-                    <!-- roulete -->
-                            <li @click="goToMines" id="menumines" class="media align-items-center mg-t-15 gameinc" :class="[page === 'mines' ? 'present' : '']">
-                                    <div class="avatar"><span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25)"><i class="ion ion-md-grid tx-22"></i></span></div>
-                                <!-- <div class="media-body pd-l-15">
-                                    <h6 class="mg-b-2"><router-link tag="a" :to="{name: 'mines'}" class="link-01 tx-18">Mines</router-link></h6>
-                                </div> -->
-                            </li>
-                    <!-- battle -->
-                            <li @click="goToMines" id="menumines" class="media align-items-center mg-t-15 gameinc" :class="[page === 'mines' ? 'present' : '']">
-                                    <div class="avatar"><span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25)"><i class="ion ion-md-grid tx-22"></i></span></div>
-                                <!-- <div class="media-body pd-l-15">
-                                    <h6 class="mg-b-2"><router-link tag="a" :to="{name: 'mines'}" class="link-01 tx-18">Mines</router-link></h6>
-                                </div> -->
-                            </li>
-                    <!-- slots -->
-                            <li @click="goToMines" id="menumines" class="media align-items-center mg-t-15 gameinc" :class="[page === 'mines' ? 'present' : '']">
-                                    <div class="avatar"><span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25)"><i class="ion ion-md-grid tx-22"></i></span></div>
-                                <!-- <div class="media-body pd-l-15">
-                                    <h6 class="mg-b-2"><router-link tag="a" :to="{name: 'mines'}" class="link-01 tx-18">Mines</router-link></h6>
-                                </div> -->
-                            </li>  
-                        <!-- Counflip -->
-                            <li @click="goToCoin" id="menucoin" class="media align-items-center mg-t-15 gameinc" :class="[page === 'coinflip' ? 'present' : '']">
-                                <div class="avatar">
-                                    <span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25);">
-                                        <div class="avatar">
-                                            <span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25);">
-                                                <img src="/coinhis1.png" style="width: 2em; height: 2em;">
-                                            </span>
-                                        </div>
-                                    </span>
-                                </div>
-                                <!-- <div class="media-body pd-l-15">
-                                    <h6 class="mg-b-2"><router-link tag="a" :to="{name: 'coinflip'}" class="link-01 tx-18">Coin</router-link></h6>
-                                </div> -->
-                            </li>
-
-                            <!-- <li @click="goToX50" id="menux50"  class="media align-items-center mg-t-15 gameinc" :class="[page === 'roulette' ? 'present' : '']">
-                                <div class="avatar">
-                                    <span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25);">
-                                        <svg width="1em" height="1em" class="iconify tx-22">
-                                            <use xlink:href="#icon-wheel">
-                                                <svg fill="currentColor" id="icon-wheel" viewBox="0 0 32 32">
-                                                    <path
-                                                        d="M8.752 6.112c1.556-1.144 3.39-1.932 5.381-2.237v-3.763c-3.019 0.351-5.781 1.542-8.047 3.334l2.666 2.666zM3.875 14.133c0.306-1.991 1.093-3.825 2.237-5.381l-2.666-2.666c-1.792 2.267-2.983 5.028-3.334 8.047h3.763zM28.554 6.086l-2.666 2.666c1.145 1.556 1.932 3.39 2.237 5.382h3.763c-0.351-3.020-1.542-5.781-3.334-8.047zM17.867 3.875c1.991 0.306 3.826 1.093 5.382 2.237l2.666-2.666c-2.267-1.792-5.028-2.983-8.047-3.334v3.763zM28.125 17.867c-0.305 1.991-1.093 3.826-2.237 5.382l2.666 2.666c1.792-2.267 2.983-5.028 3.334-8.047h-3.763zM23.249 25.888c-1.556 1.145-3.39 1.932-5.382 2.237v3.763c3.019-0.351 5.781-1.542 8.047-3.334l-2.666-2.666zM6.112 23.249c-1.144-1.556-1.932-3.39-2.237-5.382h-3.763c0.351 3.019 1.542 5.781 3.334 8.047l2.666-2.666zM14.133 28.125c-1.991-0.305-3.825-1.093-5.382-2.237l-2.666 2.666c2.267 1.792 5.028 2.983 8.047 3.334v-3.763h0.001z"
-                                                    ></path>
-                                                </svg>
-                                            </use>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="media-body pd-l-15">
-                                    <h6 class="mg-b-2"><router-link tag="a" :to="{name: 'roulette'}" class="link-01 tx-18">Roulette</router-link></h6>
-                                </div>
-                            </li> -->
-                            <!-- <li @click="goToClassic" id="menuclassic"  class="media align-items-center mg-t-15 gameinc" :class="[page === 'classic' ? 'present' : '']">
-                                <div class="avatar">
-                                    <span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25);">
-                                        <svg width="1em" height="1em" class="iconify tx-22">
-                                            <use xlink:href="#icon-classic">
-                                                <svg fill="currentColor" id="icon-classic" viewBox="0 0 24 25">
-                                                    <path
-                                                        d="M10.5006 5.3449L12 7.942L13.4995 5.3449C17.1133 6.04429 19.8425 9.22609 19.8425 13.0444C19.8425 17.3757 16.3313 20.8869 12 20.8869C7.66871 20.8869 4.15749 17.3757 4.15749 13.0444C4.15749 9.22613 6.8867 6.04427 10.5006 5.3449ZM9.8068 4.14323L9.02394 2.78727C7.45816 3.24072 6.04062 4.04309 4.86092 5.10461L5.98381 6.12985C7.06507 5.18837 8.36927 4.4963 9.8068 4.14323ZM8.34501 1.61133C3.50513 3.15742 0 7.69083 0 13.0444C0 19.6718 5.37258 25.0444 12 25.0444C15.123 25.0444 17.9673 23.8514 20.1021 21.8963L20.1524 21.9423L21.0444 20.9654L21.0278 20.9502C22.8783 18.8388 24 16.0726 24 13.0444C24 7.69084 20.4949 3.15743 15.655 1.61134L16.4188 0.288454L7.58124 0.288452L8.34501 1.61133ZM14.9761 2.78728L14.1932 4.14323C15.7164 4.51733 17.0898 5.272 18.207 6.3007L19.3272 5.27795C18.1113 4.13032 16.626 3.2651 14.9761 2.78728ZM14.1276 1.61129L12 5.29633L9.87246 1.61129L14.1276 1.61129ZM1.34283 12.3856C1.48999 9.96829 2.44154 7.76789 3.93335 6.04897L5.05027 7.06877C3.80333 8.51755 3.00176 10.3606 2.85796 12.3856L1.34283 12.3856ZM1.34315 13.7084C1.49744 16.2227 2.52187 18.5018 4.11908 20.2481L5.23554 19.2287C3.8841 17.7514 3.01024 15.8298 2.85835 13.7084L1.34315 13.7084ZM11.3412 23.7015C8.95527 23.5563 6.78092 22.6275 5.07222 21.1691L6.19884 20.1405C7.61991 21.3036 9.39675 22.0483 11.3412 22.1864L11.3412 23.7015ZM19.1208 21.0003C17.3855 22.5546 15.1388 23.5493 12.6641 23.7012L12.6641 22.186C14.6972 22.0405 16.5468 21.2317 17.9978 19.975L19.1208 21.0003ZM20.0507 20.058L18.9339 19.0384C20.1888 17.588 20.9962 15.7398 21.1417 13.7084L22.6569 13.7084C22.5081 16.1325 21.5505 18.3379 20.0507 20.058ZM22.6572 12.3856L21.1421 12.3856C21.0047 10.4506 20.2667 8.68183 19.1134 7.26436L20.2315 6.24353C21.6284 7.93252 22.5155 10.0586 22.6572 12.3856ZM15.0237 15.2176C14.554 15.2176 14.1733 15.5983 14.1733 16.068C14.1733 16.5376 14.554 16.9184 15.0237 16.9184C15.4933 16.9184 15.8741 16.5376 15.8741 16.068C15.8741 15.5983 15.4933 15.2176 15.0237 15.2176ZM14.1297 14.0866C14.4024 13.9633 14.705 13.8948 15.0237 13.8948C16.2239 13.8948 17.1969 14.8677 17.1969 16.068C17.1969 17.2682 16.2239 18.2412 15.0237 18.2412C13.8234 18.2412 12.8504 17.2682 12.8504 16.068C12.8504 15.6706 12.9571 15.2981 13.1433 14.9776L12 13.9382L10.8567 14.9776C11.0429 15.2981 11.1496 15.6706 11.1496 16.068C11.1496 17.2682 10.1766 18.2412 8.97634 18.2412C7.7761 18.2412 6.80311 17.2682 6.80311 16.068C6.80311 14.8677 7.7761 13.8948 8.97634 13.8948C9.295 13.8948 9.59764 13.9633 9.87031 14.0866L11.0167 13.0444L9.87034 12.0022C9.59769 12.1254 9.29506 12.194 8.97642 12.194C7.77618 12.194 6.80319 11.221 6.80319 10.0207C6.80319 8.82049 7.77618 7.8475 8.97642 7.8475C10.1767 7.8475 11.1496 8.82049 11.1496 10.0207C11.1496 10.4181 11.043 10.7906 10.8567 11.1111L12 12.1505L13.1433 11.1111C12.957 10.7906 12.8504 10.4181 12.8504 10.0207C12.8504 8.82049 13.8233 7.8475 15.0236 7.8475C16.2238 7.8475 17.1968 8.82049 17.1968 10.0207C17.1968 11.221 16.2238 12.194 15.0236 12.194C14.7049 12.194 14.4023 12.1254 14.1297 12.0022L12.9833 13.0444L14.1297 14.0866ZM9.82673 16.068C9.82673 15.5983 9.446 15.2176 8.97634 15.2176C8.50668 15.2176 8.12594 15.5983 8.12594 16.068C8.12594 16.5376 8.50668 16.9184 8.97634 16.9184C9.446 16.9184 9.82673 16.5376 9.82673 16.068ZM8.97642 9.17034C8.50676 9.17034 8.12603 9.55107 8.12603 10.0207C8.12603 10.4904 8.50676 10.8711 8.97642 10.8711C9.44608 10.8711 9.82681 10.4904 9.82681 10.0207C9.82681 9.55107 9.44608 9.17034 8.97642 9.17034ZM15.874 10.0207C15.874 9.55107 15.4932 9.17034 15.0236 9.17034C14.5539 9.17034 14.1732 9.55107 14.1732 10.0207C14.1732 10.4904 14.5539 10.8711 15.0236 10.8711C15.4932 10.8711 15.874 10.4904 15.874 10.0207Z"
-                                                    ></path>
-                                                </svg>
-                                            </use>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="media-body pd-l-15">
-                                    <h6 class="mg-b-2"><router-link tag="a" :to="{name: 'classic'}" class="link-01 tx-18">Classic</router-link></h6>
-                                </div>
-                            </li> -->
-                            <!-- <li @click="goToSlots" id="menuslots"  class="media align-items-center mg-t-15 gameinc" :class="[page === 'slots' || page === 'slotsGame' ? 'present' : '']">
-                                <div class="avatar">
-                                    <span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25);">
-                                        <svg width="1em" height="1em" class="iconify tx-22">
-                                            <use xlink:href="#icon-slots">
-                                                <svg fill="currentColor" id="icon-slots" viewBox="0 0 32 32">
-                                                    <path 
-                                                        d="M23.989 19.258c-0.611 0-1.203 0.087-1.762 0.248l-5.196-11.389h4.733c2.795 0 5.060-2.265 5.060-5.060v-3.057h-5.928c-2.795 0-5.060 2.265-5.060 5.060v0 0.867c0-2.002-1.623-3.625-3.625-3.625v0h-4.513v2.19c0 2.002 1.623 3.625 3.625 3.625v0h3.646l-5.194 11.389c-0.527-0.157-1.132-0.248-1.758-0.248-0.002 0-0.003 0-0.005 0h0c-3.514 0-6.372 2.858-6.372 6.371s2.858 6.371 6.371 6.371 6.371-2.858 6.371-6.371c0-2.235-1.157-4.205-2.904-5.343l4.521-9.911 4.521 9.911c-1.758 1.153-2.903 3.114-2.904 5.342v0c0 3.512 2.858 6.371 6.371 6.371s6.371-2.858 6.371-6.371-2.858-6.371-6.371-6.371z">
-                                                    </path>
-                                                </svg>
-                                            </use>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="media-body pd-l-15">
-                                    <h6 class="mg-b-2"><router-link tag="a" :to="{name: 'slots'}" class="link-01 tx-18">Slots</router-link></h6>
-                                </div>
-                            </li> -->
-                            <!-- <div class="align-items-center justify-content-between mg-t-20 d-none d-sm-flex" >
-                                <h2 class="tx-uppercase tx-semibold mg-b-0 ch-gm" style="color: #031a61;">Соц. сети</h2>
-                            </div>
-                            <div style="display: flex; ">
-                                <li @click="goToTg" id="tgchannel"  class="media align-items-center mg-t-15 gameinc">
-                                    <div class="avatar">
-                                        <span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25);">
-                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="currentColor" d="M470.435 45.423L16.827 221.249c-18.254 8.188-24.428 24.585-4.412 33.484l116.37 37.173l281.368-174.79c15.363-10.973 31.091-8.047 17.557 4.024L186.053 341.075l-7.591 93.076c7.031 14.371 19.905 14.438 28.117 7.295l66.858-63.589l114.505 86.187c26.595 15.826 41.066 5.613 46.788-23.394l75.105-357.47c7.798-35.705-5.5-51.437-39.4-37.757z"/></svg>
-                                        </span>
-                                    </div>
-                                    <div class="media-body pd-l-15">
-                                        <h6 class="mg-b-2"><a href="tg://resolve?domain=Demoney_official" target="_blank" class="link-01 tx-18">TG</a></h6>
-                                    </div>
-                                </li>
-                                <li id="tgchannel" @click="goToVk" class="media align-items-center mg-t-15 gameinc">
-                                    <div class="avatar">
-                                        <span class="avatar-initial rounded bg-dark men-gam" style="box-shadow: 0 5px 23px 0 rgba(59, 72, 99, 0.25);">
-                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M23.45 5.948c.166-.546 0-.948-.795-.948H20.03c-.668 0-.976.347-1.143.73c0 0-1.335 3.196-3.226 5.272c-.612.602-.89.793-1.224.793c-.167 0-.418-.191-.418-.738V5.948c0-.656-.184-.948-.74-.948H9.151c-.417 0-.668.304-.668.593c0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984c-.89 0-3.055-3.211-4.34-6.885C4.45 5.288 4.198 5 3.527 5H.9c-.75 0-.9.347-.9.73c0 .682.89 4.07 4.145 8.551C6.315 17.341 9.37 19 12.153 19c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884c.39 0 1.057.192 2.615 1.667C19.11 18.216 19.403 19 20.405 19h2.625c.75 0 1.126-.368.91-1.096c-.238-.724-1.088-1.775-2.215-3.022c-.612-.71-1.53-1.475-1.809-1.858c-.389-.491-.278-.71 0-1.147c0 0 3.2-4.426 3.533-5.929Z" clip-rule="evenodd"/></svg>
-                                        </span>
-                                    </div>
-                                    <div class="media-body pd-l-15">
-                                        <h6 class="mg-b-2"><a href="https://vk.com/Demoney_official" target="_blank" class="link-01 tx-18">VK</a></h6>
-                                    </div>
-                                </li>
-                            </div> -->
-                        </ul>
+<!-- mg-t-10  -->
+                    <div class=" h-90vh " style="margin-left: 11px; margin-right: 11px;">
+                      <div class="secondBlock">
+  <div class="gamesList"><a class="mainCookie flex" href="/web/20210527085313mp_/https://cookie.study/"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAE0UlEQVRoge2ZX0wcRRzHP3PclZzlT6BCRShJ6wOgSTXBgAkvnE1qRZbCS2ssjZoYjOmf9FHFB5rUYuKT2DY0Jia1Pqg1tXQBkyaWvlQFKabWmNqkadpCSIpcRKCE9rjx4Sheb2d3Z/c2vpTP0+3M7/eb79z+duY3u7DKKo82Iogg8htyiFKHIEaSWkJUIykD8gAJdAmDbscY/byC5DggkXSIFr7XGTuclfAzbCDEHgTtQDmS1F8iMwyTnHYPRi9QDoDgOFCpo8HXBOQgJSQ4hOANYI2rQwE3/YyjQ8irgzR5jSWuIuhARzzAwvI/6xiYDmAcuE2IDl092s+AHCXCJMeAt3R90jgoDLp8+LmiNQFp8hjwLfCyz3EWSNIgtvOrT39bXFNIjhIhO/EAi0QYz8LfFvdnIJU22YgHOCGamLLrlCaHpcmcPMuHXgM7TkCa7EIj5/vOl3Lgoyr6hkpsAnHWJcQ+YC2CfW5jZWI7ATlICdCjE2RopIjFeyEuDBerDRJcdgwg6QHmEHrjpWN/BxIcAmwUPUysPk7umiSxurjaoJJ/nPxFC53CIF8084Gq3ynFlKuQHKSCJa6ju867EeFJsY1Jv+7SZJZUWTIrDArS+9R3IMFeghIPcJ+ns/J3SDHLHVguzG6Cxu6pL+BT0cL+wOKlYb0DUeoIUjyA4E3Zx/pAYy5jLeYEMUs1CSSWBOZQCcNXCgGo3zyD0ThFOEdhbCWPHHqk5FUhVNH9Y51AklrVo21eKOHcj+tWrs9dTP1u23JHbyTJDvq5LiWdQU7CmkKCKpXh8G+FlrafL1vbXHiPAb6SAzzhZCRPUyoHeE4noOo8UKarJuTnPCfZgaRJmpxAcIYl/qCAOyxQRJJnkWwHXidJWPbzMSG+IMoE82wE2kQzh9PDWVchk0UUS+h3P5SupM0DXmqYplWRQn3nSxkaKSJWH2d7zLYE8sM9YZCb3qB9oDEap9jaME1hfoLC/ARbG6ZpblSLcy0t/GN5dlQpNIeihAjnSNq23NF6aGP1cYaGi+1LC//MZjaoUuh34JmgR3bCQ8pdEQab0xtUKXQtUHUaeEi5PzMbVMvoaEC6tHGtZh+g0GZNobO8gOCn4OQFiKROtPBLepP1DowxAtz+vzR54BZjXMpsVJ8HTLqBd52ixf+OcNIs48ZElI0VC+w2JikuvB+QViXdwuD9zEbfB5pPTlZy9cbaleuaTfPsb7+ltM2yEARYBJ4SBhOZHcqNTDQxDnzuFPHGRPTh6/GojeV/heDMbJiZ2TDnLq7DvGDzAkDNZyrx4LQTR+gE/rLr3lix4HidjqoQVLXZMA0ctOu0nYDYRtzpNcfu5klqNs2TuyZJzaZ52g3fR15nBO8Iw/6PdK0nZT+9SN7ORoOXQjCDo8Jgr5OB++v1u+whynqg1dXWBmO56HuQNvWbZ2wLwTQGyOOAm5GXl7ungCYd+wDoB3YKg7tuhlrltDC4SxmtQG+2yjQ4Sh5tOuLBxzcyabITOAI87tXXhSkEe0Qzp7w4ef5CIwy+5j7VCI6R2mCyZRE4QoRqr+Ihy6+U0qQc2AvsAjZ4dL8NfElqpVFuUjoE85m1ixC1PA+8CNQCVaRejuUtm8yR+v51DcEoSc4zxiXRRTKI8VdZ5VHmX0gyfNlLLjkjAAAAAElFTkSuQmCC"></a>
+    <div class="gamesBlock gamesBlockNot">
+      <div class="scrollGames" style="top: 15px;"></div><a class="game flex" @click="goToDice" id="menudice"><img alt="" src="data:image/png;base64,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"></a><a class="game flex" @click="goToMines" id="menumines"><img alt="" src="data:image/png;base64,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"></a><a class="game flex" @click="goToMines" id="menumines"><img alt="" src="data:image/png;base64,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"></a><a class="game flex" @click="goToMines" id="menumines"><img alt="" src="data:image/png;base64,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"></a>
+      <div class="game flex notActive"><img alt="" src="data:image/png;base64,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"></div>
+      <div class="game flex notActive"><img alt="" src="data:image/png;base64,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"></div>
+      <div class="game flex notActive"><img alt="" src="data:image/png;base64,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"></div>
+      <div class="game flex notActive"><img alt="" src="data:image/png;base64,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"></div>
+    </div>
+  </div>
+</div>
                     </div>
 
 
@@ -232,13 +119,17 @@
                         </div>
                     </div>
                     <div id="mainView" style="display: contents;" v-show="!$root.isLoading">
-                        <div class="col-lg-10 col-xl-10 mg-t-10" :class="[page == 'x50' ? 'overflow-hidden' : '']">
-
-                            <div class="glavn" style="background: white; box-shadow: blanchedalmond; border-radius: 5px; padding-top: 3px; padding-bottom: 3px; padding-left: 31px; margin-bottom: 11px;"> 
-                                <a style="color:blue">Игры</a>   <a style="color:grey">FAQ</a>
+                        <div class="" :class="[page == 'x50' ? 'overflow-hidden' : '']">
+                          <!-- col-lg-10 col-xl-10 mg-t-10 -->
+                    
+                             <div class="glavn" style="color:blue ; box-shadow: blanchedalmond; border-radius: 5px; padding-top: 5px; padding-bottom: 3px; padding-left: 31px; margin-bottom: 11px;"> 
+                              <router-link tag="a" :to="{name: 'index'}" class="df-logo tx-26 ">COOKIE</router-link>
                              </div>
                              <div class="glavn" style="background: white; box-shadow: blanchedalmond; border-radius: 5px; padding-top: 5px; padding-bottom: 3px; padding-left: 31px; margin-bottom: 11px;"> 
-                                <a style="color:blue; font-weight: 900; font-size: 15px;">Игры</a>  <br/> <p style="color:grey;margin-bottom: 0px;">Список игр</p>
+                                <a style="color:#3566fb; font-weight: 900; font-size: 15px;">Игры</a>  <br/> <p style="color:grey;margin-bottom: 0px;">Список игр</p>
+                             </div>
+                             <div class="glavn" style="background: white; box-shadow: blanchedalmond; border-radius: 5px; padding-top: 5px; padding-bottom: 3px; padding-left: 31px; margin-bottom: 11px;"> 
+                                <a style="color:#3566fb; font-weight: 900; font-size: 15px;     padding-right: 40px;">Игры</a>     <a style="color:#3566fb; font-weight: 900; font-size: 15px;">FAQ</a> 
                              </div>
 
                             <router-view/>
@@ -300,7 +191,7 @@
 
 <script>
     //import { VueRecaptcha } from 'vue-recaptcha';
-    import Header from "./Header/Header";
+    // import Header from "./Header/Header";
     import SignIn from "./Modals/SignIn";
     import SignUp from "./Modals/SignUp";
     import UserSettings from "./Modals/UserSettings";
@@ -310,7 +201,7 @@
 
     export default {
         components: {
-            Header,
+            // Header,
             SignIn,
             SignUp,
             UserSettings,
@@ -380,7 +271,431 @@
     }
 </script>
 
-<style type="text/css">
+<style type="text/css" scoped>
+
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background:#f1f1f1;}
+::-webkit-scrollbar-thumb{background:#888;}
+::-webkit-scrollbar-thumb:hover{background:#555;}
+a{text-decoration:none;color:inherit;}
+.flex{display:flex;justify-content:center;align-items:center;}
+.secondBlock{width:64px;margin:0 auto auto;height:calc(100vh - 79px);}
+.mainCookie{background:#fff;border-radius:10px;padding:12px;cursor:pointer;}
+.mainCookie>img{width:30px;}
+.gamesBlock{background:#fff;margin-top:25px;border-radius:10px;min-height:calc(100% - 56px);padding-top:15px;position:relative;box-shadow:0 5px 5px 1px rgba(53,102,251,.0784313725490196);}
+.gamesBlockNot{min-height:calc(100% - 51px);}
+.game{margin-bottom:15px;cursor:pointer;height:50px;transition:all .3s ease;}
+.game>img{width:33px;}
+.game:hover{-webkit-filter:hue-rotate(45deg);filter:hue-rotate(45deg);}
+.scrollGames{position:absolute;top:15px;width:7px;background:#3566fb;background:var(--main-color);height:50px;border-radius:15px;transition:all .3s ease;}
+.notActive{opacity:.5;}
+.gamesList{height:calc(100vh - 73px);width:64px;}
+@media (max-width:500px){
+.secondBlock{overflow-x:scroll;overflow-y:hidden;width:100%!important;}
+.gamesList{width:200vw!important;}
+.mainCookie,.scrollGames{display:none;}
+.secondBlock{height:64px;width:100%;z-index:9;bottom:0;box-shadow:0 -3px 20px 0 rgba(56,71,124,.09019607843137255);}
+.gamesList{height:auto;width:auto;position:relative;z-index:3;}
+.gamesBlock{margin-top:0;display:flex;justify-content:space-around;align-items:center;padding-top:0;height:64px;border-radius:0;}
+.game{margin-bottom:0;}
+}
+.secondBlock::-webkit-scrollbar-track{background:#f1f1f1;}
+.secondBlock::-webkit-scrollbar-thumb{background:#3566fb;background:var(--main-color);}
+.secondBlock::-webkit-scrollbar-thumb:hover{background:#555;}
+.secondBlock::-webkit-scrollbar{width:2px;height:4px;}
+
+
+@font-face {
+  font-family: RubikBold;
+  src: url(https://web.archive.org/web/20210613163824im_/https://cookie.study/static/media/Rubik-Bold.366b50ff.ttf);
+}
+@font-face {
+  font-family: RubikLight;
+  src: url(https://web.archive.org/web/20210613163824im_/https://cookie.study/static/media/Rubik-Light.d950a011.ttf);
+}
+
+
+@media all {
+  .fab,
+  .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+  }
+  .fa-arrow-down:before {
+    content: "\f063";
+  }
+  .fa-arrow-right:before {
+    content: "\f061";
+  }
+  .fa-circle:before {
+    content: "\f111";
+  }
+  .fa-paper-plane:before {
+    content: "\f1d8";
+  }
+  .fa-telegram-plane:before {
+    content: "\f3fe";
+  }
+  .fa-vk:before {
+    content: "\f189";
+  }
+  .fab {
+    font-family: "Font Awesome 5 Brands";
+  }
+  .fab {
+    font-weight: 400;
+  }
+  .fas {
+    font-family: "Font Awesome 5 Free";
+  }
+  .fas {
+    font-weight: 900;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgChat {
+  cursor: pointer;
+}
+.imgChat > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+.messageName {
+  font-family: RubikMedium;
+  color: #38477c;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 114px;
+  cursor: pointer;
+}
+.messageText {
+  color: #38477c;
+  font-family: RubikLight;
+  font-size: 14px;
+  padding-right: 6px;
+  word-break: break-word;
+}
+.topBlock > .text {
+  color: #55628f;
+  font-family: RubikLight;
+  padding-left: 17px;
+}
+.leftBlock {
+  max-width: 240px;
+  min-width: 240px;
+  /* position: fixed; */
+  cursor: default;
+}
+.topBlock {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px 15px;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.icons > div > i {
+  font-size: 13px;
+  color: #fff;
+}
+.icons > div:first-child {
+  background: #0091e5;
+}
+.icons > div:first-child,
+.icons > div:last-child {
+  border-radius: 100px;
+  width: 27px;
+  height: 27px;
+  margin: 0 5px;
+}
+.icons > div:last-child {
+  background: #00b2ed;
+}
+.icons {
+  cursor: pointer;
+}
+.chatBlock {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 1px rgba(53, 102, 251, 0.0784313725490196);
+  position: relative;
+}
+.contestBlock {
+  position: absolute;
+  background: #3566fb;
+  background: var(--main-color);
+  width: 100%;
+  z-index: 1;
+  font-family: rubiklight;
+  color: #fff;
+  left: 0;
+  text-align: center;
+  padding: 10px 0;
+  top: 44px;
+}
+.mobChatText {
+  display: none;
+  width: 100%;
+}
+.chatTop {
+  justify-content: flex-start;
+  border-bottom: 1px solid #dae3ff;
+  margin-bottom: 20px;
+  cursor: default;
+  padding: 10px 18px;
+}
+.autoScroll {
+  cursor: pointer;
+  border-radius: 100px;
+  color: #3566fb;
+  color: var(--main-color);
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 10px;
+}
+.chatTop > div > div:first-child > i {
+  color: #3566fb;
+  color: var(--main-color);
+  font-size: 8px;
+}
+.online {
+  font-family: RubikRegular;
+  font-size: 20px;
+  color: #3566fb;
+  color: var(--main-color);
+  margin-left: 10px;
+}
+.dataMessage {
+  width: 100%;
+  position: relative;
+}
+.time {
+  font-family: rubikregular;
+  color: #3566fb;
+  color: var(--main-color);
+  font-size: 10px;
+  padding-right: 15px;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+.message {
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 18px;
+  position: relative;
+}
+.sendChat {
+  color: #3566fb;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.messages {
+  max-height: calc(100vh - 434px);
+  min-height: calc(100vh - 434px);
+  margin-top: 65px;
+}
+.messages,
+.messagesNot {
+  overflow-y: auto;
+  transition: all 0.4s ease;
+}
+.messagesNot {
+  max-height: calc(100vh - 271px);
+  min-height: calc(100vh - 271px);
+}
+.inputChat > input {
+  border: none;
+  border-bottom: 1px solid #586ebf;
+  color: #586ebf;
+  font-family: RubikLight;
+  font-size: 14px;
+  padding: 10px 10px 10px 20px;
+  outline: none;
+}
+.inputChat > input::-webkit-input-placeholder {
+  color: #586ebf;
+  font-family: RubikLight;
+}
+.inputChat > input:-ms-input-placeholder {
+  color: #586ebf;
+  font-family: RubikLight;
+}
+.inputChat > input::placeholder {
+  color: #586ebf;
+  font-family: RubikLight;
+}
+.inputChat {
+  margin-top: 8px;
+  margin-bottom: 5px;
+  padding: 0 18px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.just-b {
+  justify-content: space-between;
+}
+.justStart {
+  justify-content: flex-start;
+}
+.mobIcons {
+  display: none;
+}
+.mobChatText > i {
+  font-size: 17px !important;
+  margin-right: 10px;
+}
+@media (max-width: 500px) {
+  .mobChatText,
+  .mobIcons {
+    display: block;
+  }
+  .firstBlock {
+    background: #f0f1f7;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 500px;
+    transition: all 0.4s ease;
+    z-index: 11;
+  }
+  .leftBlock {
+    z-index: 5;
+    max-width: 100%;
+    width: 100%;
+    top: 95px;
+  }
+  .messages {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(100vh - 350px);
+    max-height: calc(100vh - 350px);
+  }
+  .inputChat > input {
+    width: calc(100% - 30px);
+  }
+  .topBlock {
+    display: none;
+  }
+  .mobChatText {
+    font-family: RubikRegular;
+    color: #3566fb;
+    color: var(--main-color);
+  }
+  .chatTop {
+    justify-content: space-between;
+  }
+}
+.messages::-webkit-scrollbar {
+  width: 2px;
+}
+.messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.messages::-webkit-scrollbar-thumb {
+  background: #3566fb;
+  background: var(--main-color);
+}
+.messages::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.eot);
+  src: url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.eot#iefix)
+      format("embedded-opentype"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.woff2)
+      format("woff2"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.woff)
+      format("woff"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.ttf)
+      format("truetype"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.svg#fontawesome)
+      format("svg");
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-regular-400.eot);
+  src: url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-regular-400.eot#iefix)
+      format("embedded-opentype"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-regular-400.woff2)
+      format("woff2"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-regular-400.woff)
+      format("woff"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-regular-400.ttf)
+      format("truetype"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-regular-400.svg#fontawesome)
+      format("svg");
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-solid-900.eot);
+  src: url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-solid-900.eot#iefix)
+      format("embedded-opentype"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-solid-900.woff2)
+      format("woff2"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-solid-900.woff)
+      format("woff"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-solid-900.ttf)
+      format("truetype"),
+    url(https://web.archive.org/web/20210404030521im_/https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-solid-900.svg#fontawesome)
+      format("svg");
+}
+@font-face {
+  font-family: RubikMedium;
+  src: url(https://web.archive.org/web/20210613163824im_/https://cookie.study/static/media/Rubik-Medium.2263cf4b.ttf);
+}
+@font-face {
+  font-family: RubikLight;
+  src: url(https://web.archive.org/web/20210613163824im_/https://cookie.study/static/media/Rubik-Light.d950a011.ttf);
+}
+@font-face {
+  font-family: RubikRegular;
+  src: url(https://web.archive.org/web/20210613163824im_/https://cookie.study/static/media/Rubik-Regular.a4bece5c.ttf);
+}
+
+
+
     .global-stats-wrapper {
         display: flex;
         justify-content: center;
@@ -453,4 +768,4 @@
     }
 
     
-</styl>
+</style>
