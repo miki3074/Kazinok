@@ -8,45 +8,124 @@
                 <div class="row ">
                     <div class="col-xs-12 col-lg-6 mg-b-20">
                         <div class="pd-dc">
-                            <h5 class="tx-normal tx-rubik tx-dark tx-60 tx-spacing--1 mg-b-0 d-flex justify-content-center d-md-none" id="diceResultMobile">{{ result }}</h5>
+                            <h5 style="    color: #38477c;" class="tx-normal tx-rubik tx-dark tx-60 tx-spacing--1 mg-b-0 d-flex justify-content-center d-md-none" id="diceResultMobile">{{ result }}</h5>
                             <p class="tx-13  tx-semibold tx-spacing-0 tx-color-03 d-flex justify-content-center tx-thin d-md-none">Возможный выигрыш</p>
                             <div class="row row-sm mg-t-10 ">
                                 <div class="col-6 col-xs-6 col-md-6">
-                                    <h6 class="mg-b-15 h-mob-d">Cумма:</h6>
+                                    <h6 style="    color: #38477c;" class="mg-b-15 h-mob-d">Cумма:</h6>
                                     <div class="input-group tx-light tx-24 dice-input">
                                         <input
                                         v-model="bet"
                                         id="diceGameAmount"
-                                        style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;"
+                                        style="border: 1px solid #d0d2dd;
+    outline: none;
+    font-family: rubikbold;
+    font-size: 25px;
+    color: #38477c;
+    text-align: center;
+    width: 204px;
+    height: 60px;
+    background: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;"
                                         @keyup="validateBet"
                                         class="tx-20 tx-center form-control tx-normal tx-rubik"
                                         placeholder="Сумма"
-                                        autocomplete="off">
+                                        autocomplete="off"
+                                        >
                                     </div>
                                     <div style="margin-top: -1px;" class="btn-group tx-rubik d-flex justify-content-center">
-                                        <button @click="typeBet('max')" style="border-top-left-radius: 0; padding: 0;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Max</button>
-                                        <button @click="typeBet('min')" style="border-top-right-radius: 0; padding: 0;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Min</button>
-                                        <button @click="typeBet('x2')" style="border-top-right-radius: 0; padding: 0;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">x2</button>
-                                        <button @click="typeBet('/2')" style="border-top-right-radius: 0; padding: 4px 0;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">/2</button>
+                                        <button @click="typeBet('max')" style="border-top-left-radius: 0; padding: 0; color: #38477c;
+    font-family: rubiklight;
+  
+    border: 1px solid #d0d2dd;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0;
+    border-right: 0;
+    cursor: pointer;
+    transition: all .5s ease;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Max</button>
+                                        <button @click="typeBet('min')" style="border-top-right-radius: 0; padding: 0; color: #38477c;
+    font-family: rubiklight;
+   
+    border: 1px solid #d0d2dd;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0;
+    border-right: 0;
+    cursor: pointer;
+    transition: all .5s ease;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Min</button>
+                                        <button @click="typeBet('x2')" style="border-top-right-radius: 0; padding: 0; color: #38477c;
+    font-family: rubiklight;
+   
+    border: 1px solid #d0d2dd;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0;
+    border-right: 0;
+    cursor: pointer;
+    transition: all .5s ease;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">x2</button>
+                                        <button @click="typeBet('/2')" style="border-top-right-radius: 0; padding: 4px 0; color: #38477c;
+    font-family: rubiklight;
+   
+    border: 1px solid #d0d2dd;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0;
+    border-right: 0;
+    cursor: pointer;
+    transition: all .5s ease;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">/2</button>
                                     </div>
                                 </div>
                                 <div class="col-6 col-xs-6  col-md-6">
-                                    <h6 class="mg-b-15 h-mob-d">Шанс:</h6>
+                                    <h6 style="    color: #38477c;"  class="mg-b-15 h-mob-d">Шанс:</h6>
                                     <div class="input-group tx-thin tx-24 dice-input">
                                         <input
                                         v-model="chance"
                                         id="diceGamePercent"
-                                        style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;"
+                                        style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;
+                                        border: 1px solid #d0d2dd;
+                                        background: none;
+    outline: none;
+    font-family: rubikbold;
+    font-size: 25px;
+    color: #38477c;
+    text-align: center;
+    width: 204px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    "
                                         @keyup="validateChance"
                                         class="tx-20 tx-center form-control tx-normal tx-rubik"
                                         placeholder="Шанс"
                                         autocomplete="off">
                                     </div>
                                     <div style="margin-top: -1px;" class="btn-group tx-rubik d-flex justify-content-center">
-                                        <button @click="typeChance('max')" style="border-top-left-radius: 0; padding: 0;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Max</button>
-                                        <button @click="typeChance('min')" style="border-top-right-radius: 0; padding: 0;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Min</button>
-                                        <button @click="typeChance('x2')" style="border-top-right-radius: 0; padding: 0;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines ">x2</button>
-                                        <button @click="typeChance('/2')" style="border-top-right-radius: 0; padding: 4px 0;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines ">/2</button>
+                                        <button @click="typeChance('max')" style="border-top-left-radius: 0; padding: 0;" class=" qwe tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Max</button>
+                                        <button @click="typeChance('min')" style="border-top-right-radius: 0; padding: 0;" class="qwe tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Min</button>
+                                        <button @click="typeChance('x2')" style="border-top-right-radius: 0; padding: 0;" class="qwe tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines ">x2</button>
+                                        <button @click="typeChance('/2')" style="border-top-right-radius: 0; padding: 4px 0;" class="qwe tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines ">/2</button>
                                     </div>
                                 </div>
                             </div>
@@ -58,16 +137,16 @@
                     </div>
                     <div class="col-lg-6 ">
                         <div class="col-lg-12 but-dice">
-                            <h4 class="tx-normal tx-rubik tx-dark tx-60 tx-spacing--1 mg-b-0 justify-content-center d-none d-sm-flex" id="diceResult">{{ result }}</h4>
+                            <h4 style="    color: #38477c;" class="tx-normal tx-rubik tx-dark tx-60 tx-spacing--1 mg-b-0 justify-content-center d-none d-sm-flex" id="diceResult">{{ result }}</h4>
                             <p class="tx-13  tx-semibold tx-spacing-0 tx-color-03 justify-content-center tx-thin d-none d-sm-flex" style="pointer-events: none">Возможный выигрыш</p>
                             <div class="row row-sm">
                                 <div class="form-group col-6 col-md-6">
                                     <p class="mg-b-0 tx-color-03 tx-thin d-flex justify-content-center mb-2 h-mob-d" style="pointer-events: none">0 - <span id="minButton" class="pd-l-3">{{ min }}</span></p>
-                                    <button @click="betDiceSocket('min')" id="buttonMin" :disabled="disableBtn" style="padding: 11px;" class="btn btn-secondary btn-block tx-thin btn-la-mob btn-sel-d" @keypress.enter.prevent>Меньше</button>
+                                    <button @click="betDiceSocket('min')" id="buttonMin" :disabled="disableBtn" style="padding: 11px; background: #dce0ed; color: #38477c; width: 100%; height: 55px; margin-top: 12px; border: none;" class="btn btn-secondary btn-block tx-thin btn-la-mob btn-sel-d" @keypress.enter.prevent>Меньше</button>
                                 </div>
                                 <div class="form-group col-6 col-md-6 ">
                                     <p class="mg-b-0 tx-color-03 tx-thin d-flex justify-content-center mb-2 h-mob-d" style="pointer-events: none"><span id="maxButton" class="pd-r-3">{{ max }}</span> - 999999</p>
-                                    <button @click="betDiceSocket('max')" id="buttonMax" :disabled="disableBtn" style="padding: 11px;" class="btn btn-secondary btn-block tx-thin btn-la-mob btn-sel-d" @keypress.enter.prevent>Больше</button>
+                                    <button @click="betDiceSocket('max')" id="buttonMax" :disabled="disableBtn" style="padding: 11px; background: #dce0ed; color: #38477c; width: 100%; height: 55px; margin-top: 12px; border: none;" class="btn btn-secondary btn-block tx-thin btn-la-mob btn-sel-d" @keypress.enter.prevent>Больше</button>
                                 </div>
                             </div>
                         </div>
@@ -354,3 +433,29 @@
         }
     }
 </script>
+
+<style>
+    .card{
+        background: #fff;
+        box-shadow: 0 5px 5px 1px rgb(53 102 251 / 8%);
+   
+    border-radius: 10px;
+    }
+    .qwe{
+        color: #38477c;
+    font-family: rubiklight;
+    background: none;
+    border: 1px solid #d0d2dd;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0;
+    border-right: 0;
+    cursor: pointer;
+    transition: all .5s ease;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+</style>
