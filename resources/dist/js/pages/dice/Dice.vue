@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="card">
+        <div class="card" style="">
             <div class="card-header pd-y-20 d-md-flex align-items-center justify-content-between d-none d-sm-block">
                 <h4 class="mg-b-0">Dice</h4>
             </div>
@@ -17,84 +17,74 @@
                                         <input
                                         v-model="bet"
                                         id="diceGameAmount"
-                                        style="border: 1px solid #d0d2dd;
-    outline: none;
-    font-family: rubikbold;
-    font-size: 25px;
-    color: #38477c;
-    text-align: center;
-    width: 204px;
-    height: 60px;
-    background: none;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;"
+                                        
                                         @keyup="validateBet"
-                                        class="tx-20 tx-center form-control tx-normal tx-rubik"
+                                        class="initi tx-20 tx-center form-control tx-normal tx-rubik"
                                         placeholder="Сумма"
                                         autocomplete="off"
                                         >
                                     </div>
                                     <div style="margin-top: -1px;" class="btn-group tx-rubik d-flex justify-content-center">
                                         <button @click="typeBet('max')" style="border-top-left-radius: 0; padding: 0; color: #38477c;
-    font-family: rubiklight;
-  
-    border: 1px solid #d0d2dd;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 0;
-    border-right: 0;
-    cursor: pointer;
-    transition: all .5s ease;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Max</button>
+                                        font-family: rubiklight;
+                                    
+                                        border: 1px solid #d0d2dd;
+                                        background: none;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-top: 0;
+                                        border-right: 0;
+                                        cursor: pointer;
+                                        transition: all .5s ease;
+                                        -webkit-user-select: none;
+                                        -ms-user-select: none;
+                                        user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Max</button>
                                         <button @click="typeBet('min')" style="border-top-right-radius: 0; padding: 0; color: #38477c;
-    font-family: rubiklight;
-   
-    border: 1px solid #d0d2dd;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 0;
-    border-right: 0;
-    cursor: pointer;
-    transition: all .5s ease;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Min</button>
+                                        font-family: rubiklight;
+                                    
+                                        border: 1px solid #d0d2dd;
+                                        background: none;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-top: 0;
+                                        border-right: 0;
+                                        cursor: pointer;
+                                        transition: all .5s ease;
+                                        -webkit-user-select: none;
+                                        -ms-user-select: none;
+                                        user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">Min</button>
                                         <button @click="typeBet('x2')" style="border-top-right-radius: 0; padding: 0; color: #38477c;
-    font-family: rubiklight;
-   
-    border: 1px solid #d0d2dd;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 0;
-    border-right: 0;
-    cursor: pointer;
-    transition: all .5s ease;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">x2</button>
+                                        font-family: rubiklight;
+                                    
+                                        border: 1px solid #d0d2dd;
+                                        background: none;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-top: 0;
+                                        border-right: 0;
+                                        cursor: pointer;
+                                        transition: all .5s ease;
+                                        -webkit-user-select: none;
+                                        -ms-user-select: none;
+                                        user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">x2</button>
                                         <button @click="typeBet('/2')" style="border-top-right-radius: 0; padding: 4px 0; color: #38477c;
-    font-family: rubiklight;
-   
-    border: 1px solid #d0d2dd;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 0;
-    border-right: 0;
-    cursor: pointer;
-    transition: all .5s ease;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">/2</button>
+                                            font-family: rubiklight;
+                                        
+                                            border: 1px solid #d0d2dd;
+                                            background: none;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            border-top: 0;
+                                            border-right: 0;
+                                            cursor: pointer;
+                                            transition: all .5s ease;
+                                            -webkit-user-select: none;
+                                            -ms-user-select: none;
+                                            user-select: none;" class="tx-gray-600 btn btn-xs btn-white   tx-13 mb-mines">/2</button>
                                     </div>
                                 </div>
                                 <div class="col-6 col-xs-6  col-md-6">
@@ -103,21 +93,9 @@
                                         <input
                                         v-model="chance"
                                         id="diceGamePercent"
-                                        style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;
-                                        border: 1px solid #d0d2dd;
-                                        background: none;
-    outline: none;
-    font-family: rubikbold;
-    font-size: 25px;
-    color: #38477c;
-    text-align: center;
-    width: 204px;
-    height: 60px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    "
+                             
                                         @keyup="validateChance"
-                                        class="tx-20 tx-center form-control tx-normal tx-rubik"
+                                        class="initi tx-20 tx-center form-control tx-normal tx-rubik"
                                         placeholder="Шанс"
                                         autocomplete="off">
                                     </div>
@@ -436,6 +414,25 @@
 
 <style>
     .card{
+        
+    width: 1069px;
+
+    }
+    .initi{
+        border-bottom-right-radius: 0;border-bottom-left-radius: 0;
+                                        border: 1px solid #d0d2dd;
+                                        background: none;
+    outline: none;
+    font-family: rubikbold;
+    font-size: 25px;
+    color: #38477c;
+    text-align: center;
+    width: 204px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+    .card{
         background: #fff;
         box-shadow: 0 5px 5px 1px rgb(53 102 251 / 8%);
    
@@ -458,4 +455,14 @@
     -ms-user-select: none;
     user-select: none;
     }
+    @media (max-width: 500px){
+.initi {
+    width: calc(100% - 2px);
+    padding: 0;
+}}
+@media (max-width: 500px){
+.card{
+    width: 375px;
+}
+}
 </style>

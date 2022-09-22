@@ -34,14 +34,30 @@ h6,
 .form-control,
 .form-control:disabled,
 .form-control[readonly] {
-    background-color: #394049;
-    border-color: #384048;
-    color: #f3f3f3;
+    border-radius: 6px;
+    border: 0px solid #d0d2dd;
+    font-family: rubiklight;
+   
+    margin-left: 10px;
+    color: #38477c;
+    height: 38px;
+    outline: none;
+    font-size: 22px;
+    text-align: center;
+    min-width: 150px;
 }
 .form-control:focus {
-    background-color: #3c434c;
-    border-color: #3c434c;
-    color: #f3f3f3;
+    border-radius: 6px;
+    border: 0px solid #d0d2dd;
+    font-family: rubiklight;
+   
+    margin-left: 10px;
+    color: #38477c;
+    height: 38px;
+    outline: none;
+    font-size: 22px;
+    text-align: center;
+    min-width: 150px;
 }
 .ref-nav .active {
     cursor: pointer;
@@ -133,7 +149,7 @@ a:hover {
     border-color: #3e4650 !important;
 }
 .bg-gray-200 {
-    background: #313941;
+    background: #FFF;
 }
 .df-logo {
     color: #2f00ff;
@@ -265,7 +281,7 @@ a:hover {
     border-color: #383f49 !important;
 }
 .irs--round .irs-line {
-    background-color: #394048;
+    background-color: #eee;
 }
 .ref-nav a:not(.active):hover {
     cursor: pointer;
@@ -293,16 +309,18 @@ a:hover {
     color: #10b759 !important;
 }
 .irs--round .irs-handle {
-    background-color: #3f4650;
-    border: 4px solid #616c79;
+    
+    background-color: #3566fb;
+   
+    border: 4px solid #3566fb;;
 }
 .irs--round .irs-handle:hover,
 .irs--round .irs-handle:active,
 .irs--round .irs-handle:focus {
-    background-color: #383f48;
+    background-color: #3566fb;
 }
 .irs--round .irs-grid-pol {
-    background-color: #394049;
+    background-color: #eee;
 }
 .irs--round .irs-single {
     background-color: #616c79;
@@ -312,7 +330,7 @@ a:hover {
     border-top-color: #616c79;
 }
 .irs--round .irs-bar {
-    background-color: #586471;
+    background-color: #3566fb;
 }
 .dis-ra {
     color: transparent !important;
@@ -401,7 +419,7 @@ table.dataTable thead .sorting_desc {
     background-color: #363f48 !important;
 }
 .tx-dark {
-    color: #f8ffff !important;
+    color: #f8ffff ;
 }
 .css-i6dzq122 {
     color: #78808a !important;

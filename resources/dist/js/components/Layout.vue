@@ -2,7 +2,8 @@
     <!-- <div v-if="$root.user !== null && $root.user.is_admin == 1 || $root.user !== null && $root.user.id == 20"> --> 
     <div> 
         <!-- <Header :page="page"/> -->
-        <div class="content content-fixed mg-content">
+        <!-- mg-content -->
+        <div class="content content-fixed ">
           <!-- container pd-x-0 pd-lg-x-10 pd-xl-x-0 -->
             <div class="">
                 <div class="cont-des d-none mexe-let">
@@ -766,6 +767,81 @@ a{text-decoration:none;color:inherit;}
             flex-direction: column;
         }
     }
+    @media (max-width: 500px)
+    {
+.firstBlock {
+    background: #f0f1f7;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 500px;
+    transition: all .4s ease;
+    z-index: 11;
+    display: none;
+}
+}
 
-    
+@media (max-width: 500px){
+.mainCookie, .scrollGames {
+    display: none;
+}}
+@media (max-width: 500px){
+.gamesBlock {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0;
+    height: 64px;
+    border-radius: 0;
+}
+    }
+
+
+    @media (max-width: 500px){
+.secondBlock {
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    box-shadow: 0 -3px 20px 0 rgb(56 71 124 / 9%);
+}}
+
+@media (max-width: 500px){
+.secondBlock {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%!important;
+}}
+
+@media (max-width: 500px){
+.gamesList {
+    height: auto;
+    width: auto;
+    position: relative;
+    z-index: 3;
+}}
+
+@media (max-width: 500px){
+.gamesList {
+    width: 200vw!important;
+}
+
+}
+
+@media (max-width: 500px){
+.glavn {
+  width: 100%;
+}
+}
+@media (max-width: 1280px)
+{
+.blockGame {
+    min-width: 331px;
+}
+}
+
+
 </style>

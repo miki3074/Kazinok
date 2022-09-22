@@ -215,7 +215,7 @@ a{text-decoration:none;color:inherit;}
 @media (max-width:1280px){
 .titleGame{font-size:16px;}
 .titleDesc{font-size:6px;}
-.blockGame{min-width:200px;}
+.blockGame{min-width:331px;}
 }
 @media (max-width:500px){
 .blockMainGames{overflow:hidden;}

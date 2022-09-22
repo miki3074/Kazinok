@@ -2,7 +2,7 @@
     <div>
         <div class="card pd-b-15">
             <div class="card-header pd-y-20 d-md-flex align-items-center justify-content-between d-none d-sm-block">
-                <h4 class="mg-b-0">Mines1111</h4>
+                <h4 class="mg-b-0" style="color:#3566fb">Mines</h4>
             </div>
             <div class="row row-xs pd-20 mob-min">
                 <div class="col-xs-12 col-lg-5">
@@ -10,20 +10,19 @@
                         <div class="tab-pane fade show active " id="handMines" role="tabpanel"
                              aria-labelledby="home-tab5">
                             <div class=" d-none d-sm-block" :class="[(game.active || disableBtn) ? 'disabled' : '']" id="mines">
-                                <h6 class="mg-b-15 ">Количество бомб:</h6>
-                                <input class="js-range-slider mg-t-10 col-xs-6 irs-hidden-input" tabindex="-1" :disabled="(game.active || disableBtn)"
-                                       readonly="">
-                                <h6 class="mg-t-20">Размер игры:</h6>
+                                <h6 class="mg-t-20" style="    color: #6c779e;">Размер игры:</h6>
                                 <div
                                     class=" d-flex flex-row justify-content-center mg-b-15 mg-t-15 bg-gray-200 rounded-5 ">
                                     <div class="pd-10 bg-gray-200 "
                                          style="border-top-left-radius:5px; border-bottom-left-radius:5px">
-                                        <button class="btn btn-secondary btn-icon tx-11 mg-t-3" @click="typeBet('max')">
+                                        <!-- <button class="btn btn-secondary btn-icon tx-11 mg-t-3" @click="typeBet('max')">
                                             MAX
                                         </button>
                                         <button type="button" class="btn btn-secondary btn-icon tx-11 mg-t-3"
                                                 @click="typeBet('min')">MIN
-                                        </button>
+                                        </button> -->
+                                        <div class="blockBorder"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAE0UlEQVRoge2ZX0wcRRzHP3PclZzlT6BCRShJ6wOgSTXBgAkvnE1qRZbCS2ssjZoYjOmf9FHFB5rUYuKT2DY0Jia1Pqg1tXQBkyaWvlQFKabWmNqkadpCSIpcRKCE9rjx4Sheb2d3Z/c2vpTP0+3M7/eb79z+duY3u7DKKo82Iogg8htyiFKHIEaSWkJUIykD8gAJdAmDbscY/byC5DggkXSIFr7XGTuclfAzbCDEHgTtQDmS1F8iMwyTnHYPRi9QDoDgOFCpo8HXBOQgJSQ4hOANYI2rQwE3/YyjQ8irgzR5jSWuIuhARzzAwvI/6xiYDmAcuE2IDl092s+AHCXCJMeAt3R90jgoDLp8+LmiNQFp8hjwLfCyz3EWSNIgtvOrT39bXFNIjhIhO/EAi0QYz8LfFvdnIJU22YgHOCGamLLrlCaHpcmcPMuHXgM7TkCa7EIj5/vOl3Lgoyr6hkpsAnHWJcQ+YC2CfW5jZWI7ATlICdCjE2RopIjFeyEuDBerDRJcdgwg6QHmEHrjpWN/BxIcAmwUPUysPk7umiSxurjaoJJ/nPxFC53CIF8084Gq3ynFlKuQHKSCJa6ju867EeFJsY1Jv+7SZJZUWTIrDArS+9R3IMFeghIPcJ+ns/J3SDHLHVguzG6Cxu6pL+BT0cL+wOKlYb0DUeoIUjyA4E3Zx/pAYy5jLeYEMUs1CSSWBOZQCcNXCgGo3zyD0ThFOEdhbCWPHHqk5FUhVNH9Y51AklrVo21eKOHcj+tWrs9dTP1u23JHbyTJDvq5LiWdQU7CmkKCKpXh8G+FlrafL1vbXHiPAb6SAzzhZCRPUyoHeE4noOo8UKarJuTnPCfZgaRJmpxAcIYl/qCAOyxQRJJnkWwHXidJWPbzMSG+IMoE82wE2kQzh9PDWVchk0UUS+h3P5SupM0DXmqYplWRQn3nSxkaKSJWH2d7zLYE8sM9YZCb3qB9oDEap9jaME1hfoLC/ARbG6ZpblSLcy0t/GN5dlQpNIeihAjnSNq23NF6aGP1cYaGi+1LC//MZjaoUuh34JmgR3bCQ8pdEQab0xtUKXQtUHUaeEi5PzMbVMvoaEC6tHGtZh+g0GZNobO8gOCn4OQFiKROtPBLepP1DowxAtz+vzR54BZjXMpsVJ8HTLqBd52ixf+OcNIs48ZElI0VC+w2JikuvB+QViXdwuD9zEbfB5pPTlZy9cbaleuaTfPsb7+ltM2yEARYBJ4SBhOZHcqNTDQxDnzuFPHGRPTh6/GojeV/heDMbJiZ2TDnLq7DvGDzAkDNZyrx4LQTR+gE/rLr3lix4HidjqoQVLXZMA0ctOu0nYDYRtzpNcfu5klqNs2TuyZJzaZ52g3fR15nBO8Iw/6PdK0nZT+9SN7ORoOXQjCDo8Jgr5OB++v1u+whynqg1dXWBmO56HuQNvWbZ2wLwTQGyOOAm5GXl7ungCYd+wDoB3YKg7tuhlrltDC4SxmtQG+2yjQ4Sh5tOuLBxzcyabITOAI87tXXhSkEe0Qzp7w4ef5CIwy+5j7VCI6R2mCyZRE4QoRqr+Ihy6+U0qQc2AvsAjZ4dL8NfElqpVFuUjoE85m1ixC1PA+8CNQCVaRejuUtm8yR+v51DcEoSc4zxiXRRTKI8VdZ5VHmX0gyfNlLLjkjAAAAAElFTkSuQmCC"></div>
+
                                     </div>
                                     <div class="pd-10 bg-gray-200"><input v-model="bet" @keyup="validateBet"
                                                                           :disabled="(game.active || disableBtn)"
@@ -33,18 +32,26 @@
                                                                           autocomplete="off" placeholder="Сумма"></div>
                                     <div class="pd-10 bg-gray-200"
                                          style="border-top-right-radius:5px; border-bottom-right-radius:5px">
-                                        <button type="button" class="btn btn-secondary btn-icon tx-11 mg-t-3"
+                                        <button type="button" class="btn btn-secondary btn-icon tx-11 mg-t-3" style="background: #FFF; border-radius: 6px;border: 1px solid #d0d2dd;font-family: rubiklight;width: 40px;margin-left: 10px;color: #6c779e;height: 40px; justify-content: center;align-items: center;"
                                                 @click="typeBet('x2')">x2
                                         </button>
-                                        <button type="button" class="btn btn-secondary btn-icon tx-11 mg-t-3"
+                                        <button type="button" class="btn btn-secondary btn-icon tx-11 mg-t-3" style="background: #FFF; border-radius: 6px;border: 1px solid #d0d2dd;font-family: rubiklight;width: 40px;margin-left: 10px;color: #6c779e;height: 40px; justify-content: center;align-items: center;"
                                                 @click="typeBet('/2')">/2
                                         </button>
                                     </div>
                                 </div>
+                                <h6 class="mg-b-15 " style="    color: #6c779e;">Количество бомб:</h6>
+                                <div class="flex mobMobWidth"><div class="goBomb flex">5</div><div class="goBomb flex">10</div><div class="goBomb flex">15</div><div class="goBomb flex">24</div><input class="inputMineBomb" placeholder="Кол-во" value="3" ></div>
+                                <input v-model="mineses" class="js-range-slider mg-t-10 col-xs-6 irs-hidden-input" tabindex="-1" :disabled="(game.active || disableBtn)"
+                                       readonly="">
+                                
                             </div>
-                            <div class="d-none d-sm-block minesPanel">
+                            <div class="d-none d-sm-block minesPanel" style="margin-top: 19px;">
                                 <a id="buttonStartMines" href="#" @click="startGameSocket" v-if="!game.active"
-                                   class="btn btn-secondary btn-block pd-t-10 pd-b-10 tx-15 " style="">Начать игру</a>
+                                   class="btn btn-secondary btn-block pd-t-10 pd-b-10 tx-15 " style="background: #3566fb;border-color: #3566fb;">Начать игру</a>
+
+                                   
+
                                 <a id="buttonFinishMines" href="#" v-else-if="game.active && game.active_path <= 1"
                                    class="btn btn-secondary btn-block pd-t-10 pd-b-10 tx-15 "
                                    style="max-width: 68%"
@@ -67,7 +74,9 @@
                                    style="max-width: 30%;"
                                    :class="[(loadBomb > 0 || disableBtnCashout) ? 'disabled': '']" @click="autoSelect">Авто
                                 </a>
+                               
                             </div>
+                          
                             <button id="errorMines"
                                     style="padding: 11px; pointer-events: none; margin-top: 15px;" v-if="errors.show"
                                     class="btn btn-block tx-medium btn-la-mob bg-danger-dice tx-white bd-0 btn-sel-d mg-b-15 ">
@@ -100,7 +109,7 @@
                              :class="[blockKey > 1 ? 'mg-t-10' : '']">
                             <div v-for="bombKey in 5">
                                 <div
-                                    class="wd-65 ht-65 bg-gray-100 bd bd-1 bd-success tx-success text-center rounded-lg"
+                                    class="wd-65 ht-65 bg-gray-100 bd bd-1 bd-success tx-success text-center rounded-lg "
                                     :class="[bombKey > 1 ? 'mg-l-10' : '']"
                                     style="background:#0cc95f69;opacity: 0.25"
                                     v-if="game.bombs[setCounterBombKeys(`${blockKey}_${bombKey}`)] === 0 && typeof game.selected_bombs[setCounterBombKeys(`${blockKey}_${bombKey}`)] === 'undefined'"
@@ -124,7 +133,7 @@
                                         <line x1="6" y1="6" x2="18" y2="18"></line>
                                     </svg>
                                 </div>
-                                <div class="wd-65 ht-65 bg-gray-100 bd bd-1 rounded-lg mines-sq text-center"
+                                <div class="wd-65 ht-65 bg-gray-100 bd bd-1 rounded-lg mines-sq text-center mines"
                                      :class="[bombKey > 1 ? 'mg-l-10' : '']"
                                      v-else-if="typeof game.selected_bombs[setCounterBombKeys(`${blockKey}_${bombKey}`)] === 'undefined'"
                                      @click="setBomb(setCounterBombKeys(`${blockKey}_${bombKey}`))"
@@ -727,6 +736,46 @@
 </script>
 
 <style scoped>
+    .mines{
+        background: #eff2fb;
+    border-radius: 6px;
+    box-shadow: 0 5px 6px 0 #cfdafe;
+    cursor: pointer;
+    }
+.blockBorder{
+    border-radius: 6px;
+    border: 1px solid #d0d2dd;
+    font-family: rubiklight;
+    width: 40px;
+    color: #6c779e;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockBorder img {
+    max-width: 32px;
+}
+
+/*! CSS Used from: https://web.archive.org/web/20210527085313cs_/https://cookie.study/static/css/main.e9e8fe3b.chunk.css */
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background:#f1f1f1;}
+::-webkit-scrollbar-thumb{background:#888;}
+::-webkit-scrollbar-thumb:hover{background:#555;}
+.flex{display:flex;justify-content:center;align-items:center;}
+.inputMineBomb{border:1px solid #eff2fb;color:#38477c;width:80px;height:38px;border-radius:6px;background:#eff2fb;outline:none;font-size:17px;font-family:rubiklight;text-align:center;position:relative;right:6px;-webkit-appearance:none;}
+.goBomb{border-top-right-radius:6px;border-bottom-right-radius:6px;border:1px solid #d0d2dd;color:#6c779e;width:60px;height:40px;font-family:rubiklight;position:relative;cursor:pointer;background:#fff;transition:all .4s ease;}
+.goBomb:hover{background:#3566fb;background:var(--main-color);border-color:#3566fb;border-color:var(--main-color);color:#fff;}
+.goBomb:first-child{border-radius:6px;left:15px;z-index:5;}
+.goBomb:nth-child(2){left:10px;z-index:3;}
+.goBomb:nth-child(3){left:7px;z-index:4;}
+.goBomb:nth-child(4){left:2px;z-index:3;}
+@media (max-width:320px){
+.mobMobWidth{max-width:285px;}
+}
+
+
 @media(min-width: 824px) {
     .minesPanel {
         display: flex!important;
